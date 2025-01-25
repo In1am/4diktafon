@@ -1,0 +1,127 @@
+/* Подключаем шрифт Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* Общие стили для страницы */
+html, body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url('https://i.pinimg.com/736x/26/f0/23/26f02394861cbd35f9e897af681f77d5.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Стили для header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(33, 33, 33, 0.8);
+    color: #00C8FF;
+    font-size: 18px;
+    border-bottom: 2px solid #00C8FF;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00C8FF;
+    margin-left: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: #00FFEF;
+    text-decoration: underline;
+}
+
+/* Главный контейнер */
+main {
+    flex-grow: 1; /* Растягивается на оставшуюся высоту */
+    padding: 20px;
+    background-color: rgba(48, 48, 48, 0.7);
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Футер */
+footer {
+    background-color: rgba(33, 33, 33, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid #00C8FF;
+}
+
+/* Заголовки и текст */
+h1 {
+    color: #00FFEF;
+    font-size: 2rem;
+}
+
+p {
+    color: #aaa;
+    font-size: 1rem;
+}
+
+/* Кнопка скачивания */
+.download-button {
+    background-color: #FF8C00;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+    background-color: #FF7F32;
+}
+
+/* Кнопка доната */
+.donate-button {
+    background-color: #FFCC00;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: #FFB800;
+}
+
+/* Анимация снежинок */
+.snowflake {
+    position: absolute;
+    top: -10px;
+    z-index: 9999;
+    font-size: 24px;
+    color: white;a
+    user-select: none;
+    animation: snow 10s linear infinite;
+}
+
+@keyframes snow {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}

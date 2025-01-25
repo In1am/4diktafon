@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Страница Minecraft</title>
+    <link rel="stylesheet" href="style.css"> <!-- подключаем внешний CSS файл -->
+    <style>
+        /* Общие стили для страницы */
+        body {
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: url('https://www.minecraft.net/content/dam/minecraft/website/images/minecraft-background.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        /* Верхнее меню */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: rgba(33, 33, 33, 0.8);
+            color: #00C8FF;
+            font-size: 18px;
+            border-bottom: 2px solid #00C8FF;
+        }
+
+        nav {
+            margin-left: auto;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #00C8FF;
+            margin-left: 20px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #00FFEF;
+            text-decoration: underline;
+        }
+
+        /* Основной контент */
+        main {
+            flex-grow: 1;
+            padding: 20px;
+            background-color: rgba(48, 48, 48, 0.7);
+            margin-top: 20px;
+            text-align: center;
+            border-radius: 8px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+        }
+
+        /* Футер */
+        footer {
+            background-color: rgba(33, 33, 33, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            border-top: 2px solid #00C8FF;
+            position: relative;
+            bottom: 0;
+        }
+
+        /* Снежинки */
+        .snowflake {
+            position: absolute;
+            top: -10px;
+            z-index: 9999;
+            font-size: 24px;
+            color: white;
+            user-select: none;
+            animation: snow 10s linear infinite;
+        }
+
+        @keyframes snow {
+            0% {
+                transform: translateY(0);
+            }
+
+            100% {
+                transform: translateY(100vh);
+            }
+        }
+
+        /* Кнопки */
+        .download-button, .donate-button {
+            padding: 15px 30px;
+            border-radius: 8px;
+            font-size: 1.2rem;
+            color: white;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+        }
+
+        .download-button {
+            background-color: #FF8C00;
+        }
+
+        .download-button:hover {
+            background-color: #FF7F32;
+        }
+
+        .donate-button {
+            background-color: #FFD700;
+        }
+
+        .donate-button:hover {
+            background-color: #FFC300;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="icon">
+            <img src="https://crafatar.com/avatars/1f60f2b0ac6c441083b5d10124fe7227" alt="Steve" style="width: 50px; border-radius: 50%;">
+        </div>
+        <nav>
+            <a href="">Главная</a>
+            <a href="https://web.telegram.org/a/#-1002495919490" target="_blank">Контакт</a> <!-- Замените на вашу ссылку -->
+            <a href="">Новое</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Добро пожаловать на нашу страницу!</h1>
+        <p>Приготовьтесь к лучшему приключению в Minecraft!</p>
+
+        <div class="minecraft-info">
+            <h2>Наша сборка Minecraft:</h2>
+            <p>Наша сборка Minecraft — это нечто, что удивит вас на каждом шагу. Здесь множество модификаций, которые меняют способ игры и делают каждое мгновение уникальным. От креативных построек до захватывающих миров — это настоящий рай для каждого фаната Minecraft!</p>
+            <ul>
+                <li><strong>Захватывающие модификации:</strong> Каждый мод привносит что-то уникальное в игру.</li>
+                <li><strong>Множество опций:</strong> Откройте для себя новые возможности и приключения!</li>
+                <li><strong>Совместное времяпрепровождение:</strong> Создайте незабываемые моменты с друзьями.</li>
+                <li><strong>Свежие обновления:</strong> Частые обновления, которые постоянно вводят новые функции.</li>
+            </ul>
+        </div>
+
+        <a href="https://drive.google.com/uc?id=13k7dTN762TxbEFqQCmTQeZw0jwUvKWOV&export=download" class="download-button" target="_blank">Скачать сборку Minecraft</a>
+        <a href="https://www.donationalerts.com/r/9BMG5" class="donate-button" target="_blank">Поддержи проект</a>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Ваша страница</p>
+    </footer>
+
+    <!-- Снежинки -->
+    <div class="snowflake" style="left: 10%; animation-duration: 12s; animation-delay: 0s;">❄</div>
+    <div class="snowflake" style="left: 20%; animation-duration: 15s; animation-delay: 2s;">❄</div>
+    <div class="snowflake" style="left: 30%; animation-duration: 14s; animation-delay: 4s;">❄</div>
+    <div class="snowflake" style="left: 40%; animation-duration: 17s; animation-delay: 1s;">❄</div>
+    <div class="snowflake" style="left: 50%; animation-duration: 10s; animation-delay: 3s;">❄</div>
+    <div class="snowflake" style="left: 60%; animation-duration: 12s; animation-delay: 5s;">❄</div>
+
+    <!-- Добавим дополнительные снежинки для увеличения эффекта -->
+    <div class="snowflake" style="left: 25%; animation-duration: 13s; animation-delay: 3s;">❄</div>
+    <div class="snowflake" style="left: 35%; animation-duration: 22s; animation-delay: 0s;">❄</div>
+    <div class="snowflake" style="left: 45%; animation-duration: 18s; animation-delay: 4s;">❄</div>
+    <div class="snowflake" style="left: 55%; animation-duration: 16s; animation-delay: 6s;">❄</div>
+    <div class="snowflake" style="left: 65%; animation-duration: 17s; animation-delay: 2s;">❄</div>
+    <div class="snowflake" style="left: 75%; animation-duration: 19s; animation-delay: 5s;">❄</div>
+    <div class="snowflake" style="left: 85%; animation-duration: 21s; animation-delay: 7s;">❄</div>
+
+</body>
+
+</html>
